@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+    .home-container {
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    .welcome-card {
+        background-color: white;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .welcome-card h1 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .welcome-card p {
+        color: #666;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .student-button {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .student-button:hover {
+        background-color: #555;
+    }
+
+</style>
+
+<div class="home-container">
+
+    <div class="welcome-card">
+
+        <h1>Welcome sa aking App</h1>
+
+        <p>
+            Simple pero pamatay
+        </p>
+
+        <a href="{% url 'student_list' %}" class="student-button">
+            View Student List
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

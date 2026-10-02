@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>
+        {% block title %}
+            PELEC304 Quiz3
+        {% endblock %}
+    </title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            font-family: 'Poppins', sans-serif;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f6f8;
+            color: rgb(0, 0, 0);
+            margin-top: 40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    <footer>
+        <p style="margin: 0;">
+            App ni Adrian. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
